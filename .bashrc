@@ -11,5 +11,6 @@ fcd() {
 
 alias nd='nvim .'
 alias n='nvim'
-alias http='python3 -m http.server'
-
+alias pythonServer='python3 -m http.server'
+alias listPythonServers='sudo lsof -i -P -n | grep LISTEN | grep python'
+alias killPythonServers='sudo lsof -i -P -n | grep LISTEN | grep python | awk '"'"'{print $2}'"'"' | xargs kill'
