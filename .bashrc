@@ -8,3 +8,6 @@ fcd() {
     file=$(fzf --query="$1" --select-1 --exit-0) && cd "$(dirname "$file")"
 }
 
+
+alias nd='nvim .'
+alias n='nvim'
