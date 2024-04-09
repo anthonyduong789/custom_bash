@@ -11,3 +11,5 @@ fcd() {
 
 alias nd='nvim .'
 alias n='nvim'
+alias http='python3 -m http.server'
+
